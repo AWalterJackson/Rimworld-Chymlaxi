@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef Abstract="True" Name="BaseChymlaxiPawnKind">
+        <race>Alien_Chymlaxi</race>
+        <combatPower>40</combatPower>
+        <baseRecruitDifficulty>1.0</baseRecruitDifficulty>
+        <isFighter>false</isFighter>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="BaseChymlaxiPawnKind">
+        <defName>Chymlaxi_Colonist</defName>
+        <label>Chymlaxi Colonist</label>
+        <race>Alien_Chymlaxi</race>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>
+            <min>1000</min>
+            <max>2500</max>
+        </apparelMoney>
+        <backstoryCategories>
+        
+        </backstoryCategories>
+    </PawnKindDef>
+</Defs>

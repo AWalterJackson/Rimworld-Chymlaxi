@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>NamerPersonChymlaxiMale</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->'[Cnick]'</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>Cnick</keyword>
+                    <path>ChymlaxiNames/Nicks</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>NamerPersonChymlaxiFemale</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>name->'[Cnick]'</li>
+            </rulesStrings>
+            <rulesRaw>
+                <li Class="Rule_File">
+                    <keyword>Cnick</keyword>
+                    <path>ChymlaxiNames/Nicks</path>
+                </li>
+            </rulesRaw>
+        </rulePack>
+    </RulePackDef>
+</Defs>

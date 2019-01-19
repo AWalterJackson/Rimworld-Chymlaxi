@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="BaseChymlaxi" Abstract="True">
+        <thingClass>Pawn</thingClass>
+        <category>Pawn</category>
+        <selectable>true</selectable>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Pawn</altitudeLayer>
+        <useHitPoints>false</useHitPoints>
+        <hasTooltip>true</hasTooltip>
+        <soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+        <inspectorTabs>
+            <li>ITab_Pawn_Health</li>
+            <li>ITab_Pawn_Needs</li>
+            <li>ITab_Pawn_Character</li>
+            <li>ITab_Pawn_Training</li>
+            <li>ITab_Pawn_Gear</li>
+            <li>ITab_Pawn_Guest</li>
+            <li>ITab_Pawn_Prisoner</li>
+            <li>ITab_Pawn_Social</li>
+            <li>ITab_Pawn_Log</li>
+        </inspectorTabs>
+        <comps>
+            <li>
+                <compClass>CompAttachBase</compClass>
+            </li>
+        </comps>
+        <drawGUIOverlay>true</drawGUIOverlay>
+    </ThingDef>
+
+    <AlienRace.ThingDef_AlienRace ParentName="BaseChymlaxi">
+        <defName>Alien_Chymlaxi</defName>
+        <label>Chymlaxi</label>
+        <description>There's usually text here describing the alien. But not yet...</description>
+        <alienRace>
+            <generalSettings>
+                <maleGenderProbability>0.5</maleGenderProbability>
+                <useOnlyPawnkindBackstories>false</useOnlyPawnkindBackstories>
+                <maxDamageForSocialfight>6</maxDamageForSocialfight>
+                <allowHumanBios>true</allowHumanBios>
+                <humanRecipeImport>true</humanRecipeImport>
+                <disallowedTraits>
+                    <li>Cannibal</li>
+                </disallowedTraits>
+                <alienPartGenerator>
+                    <aliencrowntypes>
+                        <li>Average_Normal</li>
+                    </aliencrowntypes>
+                    <useGenderedHeads>true</useGenderedHeads>
+                    <useGenderedBodies>false</useGenderedBodies>
+                </alienPartGenerator>
+            </generalSettings>
+
+            <graphicPaths>
+            </graphicPaths>
+
+            <hairSettings>
+                <hasHair>true</hasHair>
+                <getsGreyAt>75</getsGreyAt>
+            </hairSettings>
+
+            <thoughtSettings>
+            </thoughtSettings>
+
+            <relationSettings>
+                <relationChanceModifierLover>1</relationChanceModifierLover>
+                <relationChanceModifierExLover>1</relationChanceModifierExLover>
+
+                <relationChanceModifierFiance>1</relationChanceModifierFiance>
+                <relationChanceModifierSpouse>1</relationChanceModifierSpouse>
+                <relationChanceModifierExSpouse>1</relationChanceModifierExSpouse>
+
+                <relationChanceModifierParent>1</relationChanceModifierParent>
+                <relationChanceModifierChild>1</relationChanceModifierChild>
+                <relationChanceModifierSibling>1</relationChanceModifierSibling>
+            </relationSettings>
+
+            <raceRestriction>
+            </raceRestriction>
+        </alienRace>
+        <race>
+            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+            <nameGenerator>NamerPersonChymlaxiMale</nameGenerator>
+            <nameGeneratorFemale>NamerPersonChymlaxiFemale</nameGeneratorFemale>
+            <intelligence>Humanlike</intelligence>
+            <makesFootprints>true</makesFootprints>
+            <lifeExpectancy>90</lifeExpectancy>
+            <body>Human</body>
+            <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+            <lifeStageAges>
+                <li>
+                    <def>AdultStageChymlaxi</def>
+                    <minAge>0</minAge>
+                </li>
+            </lifeStageAges>
+        </race>
+    </AlienRace.ThingDef_AlienRace>
+</Defs>
